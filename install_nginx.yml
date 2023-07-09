@@ -7,7 +7,6 @@
             apt:
                     name:
                             - apache2
-                            - libapache2-mod-php
                     state: latest
                     update_cash: yes
             when: ansible_distribution == "Ubuntu"
@@ -30,4 +29,5 @@
                     state: latest
                     update_cash: yes
             when: ansible_distribution == "CentOS"
+
 
