@@ -1,0 +1,15 @@
+---
+- name: deploy vsftpd
+  hosts: db
+  tasks:
+  - name: install vsftpd
+    apt: name=vsftpd
+  - name: enable vsftpd
+    service: name=vsftpd enabled=true
+  - name: create readme file
+    copy:
+     content: "welcome to this FTP server"
+     dest: /var/README
+     force: no
+     mode: 0444
+... 
