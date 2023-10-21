@@ -1,0 +1,11 @@
+---
+- name: show arrays
+  hosts: all
+  var_files:
+      - vars/users
+  tasks:
+       
+      - name: print array values
+        debug:
+            msg: "User {{ users.linda.username }} has homedirectory {{ users.linda.homedir }} and shell {{ users.linda.shell }}"
+      

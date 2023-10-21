@@ -1,0 +1,13 @@
+control.example.com
+db01
+db02
+
+[lamp]
+db01
+
+[file]
+db02
+
+[nodes:children]
+lamp
+file

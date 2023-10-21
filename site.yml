@@ -1,0 +1,15 @@
+---
+- name: configure web sites
+  hosts: all
+  tasks:
+      - name: this is the {{ web_package }} package
+        debug:
+          msg: "Installing {{ web package }}"
+      - name: this is the {{ web_service }} service
+        debug:
+          msg: "Starting {{ web_service }}"
+
+
+
+
+...
